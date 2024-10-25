@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container_form">
+        <section class="flex">
+            <div class="container">
+                <h1><em>Register Form</em></h1>
+
+                <div id="message" class="message"></div>
+
+                <div class="row">
+                    <span>ชื่อ </span><input name="firstname" type="text" placeholder="" class="input">
+                    <span>นามสกุล </span><input name="lastname" type="text" placeholder="" class="input">
+                </div>
+                <div class="row">
+                    <span>อายุ : </span><input name="age" type="number" min="0" max="100" class="input">
+                </div>
+                <div class="row">
+                    <span>เพศ : </span>
+                    <input name="radio_gender" type="radio" value="ชาย"><span> ชาย</span>
+                    <input name="radio_gender" type="radio" value="หญิง"><span> หญิง</span>
+                    <input name="radio_gender" type="radio" value="ไม่ระบุ"><span> ไม่ระบุ</span>
+                </div>
+                <div class="row">
+                    <span>สิ่งที่สนใจ : </span>
+                    <div class="interest">
+                        <input name="interest" type="checkbox" value="หนังสือ"><span> หนังสือ</span>
+                    </div>
+                    <div class="interest">
+                        <input name="interest" type="checkbox" value="กีฬา"><span> กีฬา</span>
+                    </div>
+                    <div class="interest">
+                        <input name="interest" type="checkbox" value="เพลง"><span> เพลง</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span>อธิบายตัวเองเพิ่มเติม</span><br>
+                    <textarea name="description" id="" class="input"></textarea>
+                </div>
+                <div class="row">
+                    <button onclick="submitData()" class="btn">ส่งข้อมูล</button>
+                    <a href="user.html"><button class="btn">Go to User Management</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

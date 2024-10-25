@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container_form{
+    width: 640px;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 20px;
+    background: #d5d5d5;
+}
+.header-userpage{
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 3rem;
+}
+.contener-page {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 3rem;
+}
+h1{
+    font-size: 5rem;
+    border-bottom: .3rem solid #000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.row{
+    margin-bottom: 10px;
+}
+.input{
+    border-radius: .3rem;
+    color: #000;
+    padding: 2.5px 5px;
+    border: .1rem solid rgba(0, 0, 0, .1);
+}
+.input:focus{
+    outline: none;
+}
+.interest{
+    margin-left: 10px;
+}
+textarea{
+    height: 15rem;
+    width: 100%;
+    resize: none;
+    margin-top: 1rem;
+}
+.btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.message{
+    padding: 10px;
+    margin-bottom: 10px;
+    display: none;  
+}
+.message.success{
+    background-color: lightgreen;
+    display: block;
+}
+.message.danger{
+    background-color: lightcoral;
+    display: block;
+    ul {
+        padding: 0 20px;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+.table-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.table-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete{
+    background-color: #d10e3f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.delete:hover {
+    background-color: #c50812;
+}

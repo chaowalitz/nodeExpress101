@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าต่างสมัคร</title>
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .box-container {
+            background-color: lightgreen;
+            width: 640px;
+            margin: auto;
+            margin-top: 3rem;
+            padding: 3rem;
+            border-radius: 1rem;
+            input {
+                padding: .5rem;
+                border: 1px solid #d5d5d5;
+                border-radius: .5rem;
+            }
+        }
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #000;
+        }
+        .box-container .fullname {
+            display: block;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 1rem;
+            .firstname {
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .box-container .age {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .box-container .genders {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 1rem;
+            p {
+                margin-right: 1rem;
+            }
+        }
+        .box-container .interests {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 1rem;
+            p {
+                margin-right: 1rem;
+            }
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 1rem;
+            border: 1px solid #d5d5d5;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <h2>Regster</h2>
+        <div class="fullname">
+            <div class="firstname">
+                <span>Firstname : </span>
+                <input type="text">
+            </div>
+            <div class="lastname">
+                <span>Lastname : </span>
+                <input type="text">
+            </div>
+        </div>
+        <div class="age">
+            <span>Age : </span>
+            <input type="number" min="0" max="100">
+        </div>
+        <div class="genders">
+            <span>Gender : </span>
+            <input type="radio" name="gender"><p>F</p>
+            <input type="radio" name="gender"><p>M</p>
+            <input type="radio" name="gender"><p>N/A</p>
+        </div>
+        <div class="interests">
+            <span>Interests : </span>
+            <input type="checkbox"><p>Book</p>
+            <input type="checkbox"><p>Sport</p>
+            <input type="checkbox"><p>Song</p> 
+        </div>
+        <div class="other">
+            <textarea name="" id=""></textarea>
+        </div>
+    </div>
+</body>
+</html>
