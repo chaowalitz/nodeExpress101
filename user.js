@@ -23,10 +23,6 @@ const loadData = async () => {
             </tr>`
     }
 
-    // ${user.id} ${user.firstname} ${user.lastname}
-    // <a href='register.html?id=${user.id}'><button>edit</button></a>
-    // <button class='delete' data-id='${user.id}'>delete</button>
-        
     htmlData += '</div>'
 
     userDOM.innerHTML = htmlData
